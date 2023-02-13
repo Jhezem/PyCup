@@ -1,0 +1,84 @@
+
+.checkbox {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 999;
+}
+
+.hamburger i {
+  color: var(--white);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.navigation_container {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.show_nav {
+  display: block;
+}
+
+.hide_nav {
+  display: none;
+}
+
+.navigation_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  min-height: 50vh;
+  min-width: 100vw;
+  background-color: var(--black);
+  transition: all 1s ease;
+}
+
+.navigation_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.navigation_container ul li {
+  list-style: none;
+}
+
+.navigation_container ul li a:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation_container {
+    min-height: 100px;
+    max-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navigation_wrapper {
+    display: block;
+    position: static;
+    min-height: auto;
+    min-width: auto;
+  }
+
+  .navigation_container ul {
+    flex-direction: row;
+    column-gap: 4em;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
