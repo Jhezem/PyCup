@@ -1,21 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { Navbar } from '../components/Navbar'
-import { Header } from '../components/Header'
+import Head from "next/head";
+import MainLayout from "../layouts/MainLayout";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <MainLayout>
       <Head>
         <title>Pycup</title>
         <meta name="description" content="Py Cup sitio web oficial" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-      </main>
-
-    </div>
-  )
+      <main className={styles.main}></main>
+    </MainLayout>
+  );
 }
