@@ -16,6 +16,7 @@ export const Header = () => {
           filter: "brightness(0.3)",
           width: "100%",
         }}
+        priority
       />
       <div className={styles.cta}>
         <h1>
