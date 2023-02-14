@@ -10,7 +10,7 @@
     "check-format": "prettier --check .",
     "format": "prettier --write .",
     "check-ts": "tsc --pretty --noEmit",
-    "check-all": "yarn run lint && yarn run check-format && yarn-run check-ts"
+    "check-all": "yarn run lint && yarn run check-format && yarn run check-ts"
   },
   "dependencies": {
     "@types/node": "18.11.9",
