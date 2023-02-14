@@ -9,6 +9,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white);
+  display: grid;
+  row-gap: 2rem;
 }
 
 .cta h1 {
@@ -47,6 +49,7 @@
 @media screen and (min-width: 1280px) {
   .header .cta {
     width: 60%;
+    top: 60%;
   }
 
   .cta_container {
