@@ -7,7 +7,7 @@ export default function MainLayout({ children }: React.PropsWithChildren) {
   return (
     <div className={styles.container}>
       <Header />
-      {children}
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   );
