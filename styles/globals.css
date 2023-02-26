@@ -14,6 +14,19 @@ body {
   --black: #111111;
   --white: #fff;
   --primary-color: #ff4755;
+  --primary-color-dark: #a40612;
+  --primary-gradient: radial-gradient(
+    circle,
+    rgba(255, 71, 127, 1) 24%,
+    rgba(255, 71, 143, 1) 35%,
+    rgba(255, 71, 71, 1) 96%
+  );
+  --black-gradient: linear-gradient(
+    90deg,
+    rgba(17, 25, 41, 1) 0%,
+    rgba(17, 25, 41, 1) 43%,
+    rgba(17, 25, 41, 1) 92%
+  );
 }
 
 /* RESET CSS */
@@ -130,6 +143,16 @@ h1 {
 h2 {
   font-size: clamp(1.8rem, 10vw, 3.8rem);
   font-weight: 700;
+}
+
+p {
+  font-size: clamp(0.8rem, 10vw, 1.23rem);
+  font-weight: 400;
+}
+
+a {
+  font-size: clamp(0.8rem, 10vw, 1.23rem);
+  font-weight: 400;
 }
 
 * {
