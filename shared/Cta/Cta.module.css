@@ -1,0 +1,49 @@
+.two_column .grid {
+  display: grid;
+  min-height: 25rem;
+}
+
+.two_column .grid .image {
+  display: none;
+}
+
+.two_column .grid .cta {
+  background: var(--primary-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  color: var(--black);
+}
+
+.two_column .cta .title span {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.two_column .cta .content {
+  max-width: 90%;
+}
+
+.two_column .cta .action a {
+  background-color: var(--primary-color-dark);
+  color: var(--white);
+  padding: 1em 3em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .two_column .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .two_column .grid .image {
+    position: relative;
+    display: block;
+    height: 100%;
+    background-color: var(--primary-color-dark);
+  }
+}
