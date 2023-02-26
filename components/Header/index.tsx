@@ -9,12 +9,12 @@ export const Header = () => {
       <Navbar />
       <Image
         src={"/img/rapbattle.jpg"}
-        width={1600}
-        height={600}
+        fill
         alt="banner"
         style={{
           filter: "brightness(0.3)",
-          width: "100%",
+          zIndex: "-1",
+          objectFit: "cover",
         }}
         priority
       />

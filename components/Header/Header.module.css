@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  min-height: 80vh;
 }
 
 .header .cta {
@@ -47,6 +48,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header {
+    min-height: 100vh;
+  }
+
   .header .cta {
     width: 60%;
     top: 60%;
