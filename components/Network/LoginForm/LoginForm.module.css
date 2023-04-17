@@ -67,7 +67,7 @@
 }
 
 .auth_error span {
-  color: var(--danger)
+  color: var(--danger);
 }
 
 /* DESKTOP */
