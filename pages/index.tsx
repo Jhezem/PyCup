@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Pycup</title>
         <meta name="description" content="Py Cup sitio web oficial" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <TwoColumn
         subtitle="Solo los verdaderos improvisan."
