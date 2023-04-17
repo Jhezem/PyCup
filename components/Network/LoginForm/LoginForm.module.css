@@ -1,0 +1,79 @@
+.form {
+  min-height: 100vh;
+  min-width: 100%;
+  background: var(--black-gradient);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .wrapper {
+  background-color: var(--white);
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 1px 1px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 2em;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 1.5rem;
+}
+
+.form_group {
+  width: 80%;
+}
+
+.form_group input[type="text"],
+.form_group input[type="password"] {
+  border: 1px solid #cfcfcf;
+  padding: 0.3em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form_group input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 100%;
+  padding: 0.4em;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  cursor: pointer;
+}
+
+.social_login .google {
+  color: #eb4335;
+  font-size: 1.5em;
+  border: 2px solid #eb4335;
+  padding: 0.1em 0.4em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.register span a {
+  font-size: 1em;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.auth_error span {
+  color: var(--danger)
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  .form .wrapper {
+    width: 40%;
+  }
+}
